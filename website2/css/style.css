@@ -1,0 +1,101 @@
+body {
+  background:;
+  max-width: 900px;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+
+}
+header {
+  background-color: #F7BA00;
+}
+]
+img {
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  /*float: left;*/
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Black 900', bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+  font-size: 20px;
+  text-align: left;
+}
+h3{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Semibold 600', normal;
+  font-size: 15px;
+  text-align: left;
+}
+
+p{
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 15px;
+  text-align: left;
+}
+div{
+  margin-bottom: 25px;
+  text-align: left;
+}
+.caption{
+  font-size: .75em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/*#navigation{
+  color: white;
+  list-style-type: none;
+  padding: 0px;
+  height: 210px;
+  background-color: #F7BA00;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Semibold 600', normal;
+  float: left;
+  position: inline;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 11px 25px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #E27450;
+  color: white;
+}

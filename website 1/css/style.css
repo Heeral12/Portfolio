@@ -1,0 +1,116 @@
+body {
+  background-color: #e4edf1;
+  width: 100%;
+  padding: 15px 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header{
+  background-color: #C1D3DD;
+  width: 100%;
+  margin: 0;
+}
+img {
+  height: auto;
+  max-width: 200px;
+  margin: 20px;
+  justify-content: center;
+  border: none;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Black 900', bold;
+  font-size: 6em;
+  color: #E27450;
+
+}
+
+header h1{
+  text-align: center;
+}
+
+h2{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+  margin: 1.5rem;
+
+}
+h3{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Semibold 600', normal;
+
+}
+
+p{
+  font-family: 'Libre Caslon Text', serif;
+}
+
+.caption{
+  font-size: .75em;
+}
+
+header .nav ul{
+  list-style-type: none;
+  display: inline-flex;
+  align-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E27450;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+
+}
+li a {
+  list-style-type: none;
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  float: left;
+}
+
+li a:hover:not(.active) {
+  list-style-type: none;
+  background-color: #F7BA00;
+}
+
+.active {
+  list-style-type: none;
+  background-color: #F7BA00;
+}
+
+footer {
+  text-decoration-color: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+  font-size: .75em;
+  background-color: #C1D3DD;
+  width: 100%;
+  margin: 2rem, 0,0,0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 600px) {
+    header .nav ul{
+      list-style-type: none;
+      display: inline-flex;
+      align-content: flex-end;
+      flex-direction: column;
+  }
+  li a {
+
+    width: 100%;
+    margin: none;
+  }
