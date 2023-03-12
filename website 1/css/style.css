@@ -112,5 +112,6 @@ footer {
   li a {
 
     width: 100%;
-    margin: none;
+    margin: auto;
+    text-align: center;
   }

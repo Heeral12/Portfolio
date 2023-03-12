@@ -3,6 +3,9 @@ font-family: 'Fira Sans', sans-serif;
 font-weight: 'Black 900', bold;
 font-weight: 'Semibold 600', normal;
 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Libre Caslon Text', serif;
+font-family: 'Open Sans', sans-serif;
 */
 
 body {
@@ -10,27 +13,52 @@ body {
   padding: 15px 10px;
   margin: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: 'Libre Caslon Text', serif;
+  background-color: #ebc9a0;
 }
 header{
-  width: 100%;
   margin: 0;
   background-color: gold;
   padding:2rem;
-}
-
-/*div {
+  width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-}*/
+}
+
+div .media {
+  display: flex;
+  align-items: justify;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+div .copy {
+  display: flex;
+  align-items: justify;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+
+}
+
+div .book {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+}
+
 img {
   height: auto;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 h1 {
@@ -41,13 +69,10 @@ h1 {
 
 h2{
   font-weight: bold;
+  text-align: center;
 }
 h3{
-  font-style: italic, oblique;
-}
-
-header p{
-  color: #2e0e02;
+  font-family: 'Fira Sans', sans-serif;
 }
 p{
 }
@@ -65,11 +90,71 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 
 }
 
+header .nav ul{
+  list-style-type: none;
+  display: inline-flex;
+  align-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #gold;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+
+}
+li a {
+  list-style-type: none;
+  display: inline-flex;
+  color: brown;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  float: left;
+}
+
+li a:hover:not(.active) {
+  list-style-type: none;
+  background-color: #gold;
+}
+
+.active {
+  list-style-type: none;
+  background-color: #gold;
+}
+
+footer {
+  text-decoration-color: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 'Bold 700', bolder;
+  font-size: .75em;
+  background-color: #C1D3DD;
+  width: 100%;
+  margin: 2rem, 0,0,0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px){
+  div .book {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 600px) {
     header .nav ul{
       list-style-type: none;
@@ -81,4 +166,19 @@ footer {
 
     width: 100%;
     margin: none;
+  }
+    div .book {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    header .nav ul{
+      list-style-type: none;
+      display: inline-flex;
+      align-content: flex-end;
+      flex-direction: column;
   }
